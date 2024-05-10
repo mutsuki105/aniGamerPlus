@@ -1,4 +1,4 @@
-FROM python:slim
+FROM --platform=linux/amd64 python:3.10
 
 RUN apt update && \
     apt install -y g++ gcc make libevent-dev libffi-dev libxml2-dev libxslt-dev zlib1g-dev ffmpeg && \
